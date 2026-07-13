@@ -1,0 +1,26 @@
+{%extends 'myapp/base.html'%}
+{%load widget_tweaks%}
+{%block content_block%}
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header bg-dark text-white text-center">
+                    <p class="h2">Register Here</p>
+                    </div>
+                    <div class="card-body">
+                        <form  method="POST">
+                            {%csrf_token%}
+                            {{form.first_name|attr:"Placeholder : First Name"|add_class:"form-control form-group"}}
+                            {{form.last_name|attr:"Placeholder : Last Name"|add_class:"form-control form-group"}}
+                            {{form.username|attr:"Placeholder : User Name"|add_class:"form-control form-group"}}
+                            {{form.password|attr:"Placeholder : Password"|add_class:"form-control form-group"}}
+                            <button class="btn btn-sm bg-dark text-white mt-3">Register</button>
+                            <a href="/" class="btn btn-dark text-white btn-sm text-white float-right mt-3">Back</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}

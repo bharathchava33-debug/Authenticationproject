@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{%load widget_tweaks%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css">
+
+<!-- MDBootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark text-white">
+        <a href="/" class="nav-item text-white">Home</a>
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="/javaex" class="nav-link text-white">Java Exam</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pythonex" class="nav-link text-white">python Exam</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/uiex" class="nav-link text-white">Ui Exam</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/signup" class="nav-link text-white">Sign Up</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link text-white">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    {%block content_block%}
+    {%endblock%}
+</body>
+</html>
